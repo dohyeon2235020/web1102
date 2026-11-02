@@ -6,57 +6,55 @@
     <title>리스트에서 자료 선택하기</title>
     <script>
         function drawFrultsImage() {
-            let sel = document.getElementById("frults"); //선택 리스트 id 
-            let img = document.getElementById("fimg"); //바꿀 이미지 id 
-            img.src = sel.options[sel.selectedIndex].value; // 선택한 리스트의 위치 값으로 img 태그의 src 속성을 변경해라 
+            let sel = document.getElementById("frults");
+            let img = document.getElementById("fimg");
+            img.src = sel.options[sel.selectedIndex].value;
         }
-    </script>
-<script>
+
         function drawLunchImage() {
-            let sel = document.getElementById("Lunch"); //선택 리스트 id 
-            let img = document.getElementById("limg"); //바꿀 이미지 id 
-            img.src = sel.options[sel.selectedIndex].value; // 선택한 리스트의 위치 값으로 img 태그의 src 속성을 변경해라 
+            let sel = document.getElementById("Lunch");
+            let img = document.getElementById("limg");
+            img.src = sel.options[sel.selectedIndex].value;
         }
-    </script>
-<script>
+
         function drawListImage() {
-            let sel = document.getElementById("list"); //선택 리스트 id 
-            let img = document.getElementById("listimg"); //바꿀 이미지 id 
-            img.src = sel.options[sel.selectedIndex].value; // 선택한 리스트의 위치 값으로 img 태그의 src 속성을 변경해라 
+            let sel = document.getElementById("list");
+            let img = document.getElementById("listimg");
+            img.src = sel.options[sel.selectedIndex].value;
         }
     </script>
 </head>
 <body>
     주제1. 내가 좋아하는 과일 선택 <br>
     <form>
-        <select id="frults"  onchange="drawImage()">
+        <select id="frults" onchange="drawFrultsImage()">
             <option value="APPLE.png">사과</option>
             <option value="STRAWBERRY.png">딸기</option>     
-            <option value="CHERRY.png">채리</option>
+            <option value="CHERRY.png">체리</option>
         </select>
-        <img id="fimg" src="APPLE.png" alt="설명문" width="100" height="100">
+        <img id="fimg" src="APPLE.png" alt="과일 이미지" width="100" height="100">
     </form>
 
     주제2. 오늘 점심 메뉴 선택 <br>
     <form>
-        <select id="Lunch"  onchange="drawImage()">
+        <select id="Lunch" onchange="drawLunchImage()">
             <option value="menu1.png">김치찌개</option>
             <option value="menu2.png">바지락 칼국수</option>
             <option value="menu3.png">제육볶음 정식</option>
             <option value="menu4.png">돈까스 정식</option>
             <option value="menu5.png">베트남 쌀국수</option>
         </select>
-        <img id="limg" src="menu1.png" alt="설명문" width="100" height="100">
+        <img id="limg" src="menu1.png" alt="점심 메뉴 이미지" width="100" height="100">
     </form>
+
     주제3. 버킷리스트 <br>
     <form>
-        <select id="list"  onchange="drawImage()">
+        <select id="list" onchange="drawListImage()">
             <option value="list1.png">스쿠버다이빙</option>
             <option value="list2.png">스카이다이빙</option>     
             <option value="list3.png">밴쿠버여행</option>
         </select>
-        <img id="listimg" src="list1.png" alt="설명문" width="100" height="100">
+        <img id="listimg" src="list1.png" alt="버킷리스트 이미지" width="100" height="100">
     </form>
-
 </body>
 </html>
