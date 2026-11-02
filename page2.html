@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리스트에서 자료 선택하기</title>
     <script>
-        function drawFrultsImage() {
-            let sel = document.getElementById("frults");
+        function drawFruitsImage() {
+            let sel = document.getElementById("fruits");
             let img = document.getElementById("fimg");
             img.src = sel.options[sel.selectedIndex].value;
         }
@@ -27,7 +27,7 @@
 <body>
     주제1. 내가 좋아하는 과일 선택 <br>
     <form>
-        <select id="frults" onchange="drawFrultsImage()">
+        <select id="fruits" onchange="drawFruitsImage()">
             <option value="APPLE.png">사과</option>
             <option value="STRAWBERRY.png">딸기</option>     
             <option value="CHERRY.png">체리</option>
